@@ -1,0 +1,142 @@
+body {
+    background-color: black !important;
+}
+
+.demo {
+    position: relative;
+    width: 25%;
+    margin-bottom: 20px;
+    z-index: -9999999999999;
+  
+}
+
+.name_respons {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background-color: rgba(246, 240, 237, 0.7);
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    opacity: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: opacity 0.3s ease-in-out, top 0.5s ease-in-out;
+}
+
+.demo:hover .name_respons {
+    opacity: 1;
+    top: 0;
+}
+
+.element {
+    width: 100%;
+    display: block;
+}
+.side-nav-menu {
+    width: 250px; /* Adjust the width as needed */
+    background-color: white; /* Background color for the side navigation */
+    transition: left 0.3s ease-in-out; /* Smooth transition for sliding */
+    color: black; /* Ensure text color is black */
+}
+
+.side-nav-menu .nav-tab .links ul li {
+    color: white; /* Ensure text color of links is black */
+}
+
+.side-nav-menu .nav-footer {
+    color: white; /* Ensure text color in footer is black */
+}
+
+.side-nav-menu .nav-header {
+    background-color: white;
+    color: black; /* Ensure text color in header is black */
+}
+
+.side-nav-menu .nav-header i {
+    color: black; /* Ensure icon color in header is black */
+}
+
+.side-nav-menu .nav-footer .icons i {
+    color: black; /* Ensure icon color in footer is black */
+}
+.side-nav-menu
+{
+    z-index: 99999999999;
+}
+.links
+{
+   
+        cursor: pointer;
+
+}
+.baricon
+{
+    cursor: pointer;
+}
+body {
+    background-color: black !important;
+}
+
+.demo {
+    position: relative;
+    width: 25%;
+    margin-bottom: 20px;
+    z-index: 99999999999;
+
+}
+
+.name_respons {
+    position: absolute;
+    top: 100%;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(246, 240, 237, 0.7);
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    opacity: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: opacity 0.3s ease-in-out, top 0.7s ease-in-out ;
+}
+
+.demo:hover .name_respons {
+    opacity: 1;
+    top: 0%;
+}
+
+.element {
+    width: 100%;
+    display: block;
+}
+
+.side-nav-menu {
+    transition: left 0.3s ease;
+}
+
+.side-nav-menu.hidden {
+    left: -256px;
+}
+
+.side-nav-menu.visible {
+    left: 0;
+}
+.loader {
+    width: 48px;
+    height: 48px;
+    border: 5px solid #FFF;
+    border-bottom-color: transparent;
+    border-radius: 50%;
+    display: inline-block;
+    box-sizing: border-box;
+    animation: rotation 1s linear infinite;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
